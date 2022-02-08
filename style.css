@@ -1,0 +1,648 @@
+*{
+    margin: 0; /*removendo margin do body e de todos os elementos*/
+}
+
+
+/*Start of Header*/
+
+header {
+    height: 50px;
+    width: 100%;
+    background-color: #2F2519;
+}
+
+header img {
+    margin-left: 25px;
+    width: 50px;
+    height: 50px;
+}
+
+/*End of Header*/
+
+
+/*Start of Landing Page*/
+
+.landing-page {
+    height: 250px;
+    width: 100%;
+    position: relative;
+    border: 2px solid rgb(241, 235, 222);
+    box-sizing: border-box;
+}
+
+.landing-page::before {
+    content: "";
+    background-image: url(assets/anne-frank-diary.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+
+.text-landing {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    font-family: 'Cormorant', serif;
+}
+
+.welcome-to {
+    position: relative;
+    bottom: 35px;
+    color: #171010;
+    font-size: 60px;
+    float: left;
+}
+
+.anne-house{
+    position: relative;
+    left: 15px;
+    bottom: 35px;
+    color: #171010;
+    text-shadow: 1px 0.5px black;
+    font-size: 60px;
+    float: right;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.line-left {
+    position: relative;
+    bottom: 20px;
+    width: 45%;
+    height: 1px;
+    float: left;
+    background-color: #171010;
+}
+
+.opening-hours {
+    position: absolute;
+    clear: left;
+    top: 70%;
+    transform: translateY(70%);
+    color: #171010;
+    font-weight: 600;
+}
+
+/*End of Landing Page*/
+
+
+/*Start of left-content (history part)*/
+
+.about {
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid rgb(241, 235, 222);
+    border-bottom: none;
+    height: 700px;
+    width: 50%;
+    background-color: wheat;
+    float: left;
+}
+
+.about::before {
+    content: "";
+    background-image: url(assets/anne-frank-house2.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+.square1 {
+    max-width: 30%;
+    position: relative;
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+}
+
+.square1::before {
+    border: 1px solid black;
+    content: "";
+    width: 120%;
+    height: 120%;
+    background-color: #fff8f3e3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.p1 {
+    position: relative;
+    color: #171010;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Cormorant', serif;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.square2 {
+    max-width: 30%;
+    position: relative;
+    top: 30%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+}
+
+.square2::before {
+    border: 1px solid black;
+    content: "";
+    width: 120%;
+    height: 120%;
+    background-color: #fff8f3e3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.p2 {
+    position: relative;
+    color: #171010;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Cormorant', serif;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/*End of left-content (history part)*/
+
+
+/*Start of Right-Content (lead capture page)*/
+
+.lead-capture {
+    box-sizing: border-box;
+    border: 2px solid rgb(241, 235, 222);
+    border-bottom: none;
+    height: 700px;
+    width: 50%;
+    background-color: #171010;
+    position: relative;
+    display: inline-block;
+}
+
+.lead-capture::before {
+    content: "";
+    background-image: url(assets/anne-frank-collage.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+}
+
+.formulary-info {
+    position: absolute;
+    max-width: 25%;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+
+.formulary-info::before {
+    border: 1px solid black;
+    content: "";
+    width: 140%;
+    height: 140%;
+    background-color: #fff8f3e3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.formulary-info p{
+    color: #171010;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    font-family: 'Cormorant', serif;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.formulary-info input, select {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 7px;
+    margin-top: 6px;
+    transition: 0.8s;
+    background-color: #2900016b;
+    font-size: 14px;
+}
+
+.formulary-info input::placeholder {
+    color: white;
+}
+
+.formulary-info input:hover {
+    transition: 0.5s;
+    color: black;
+    background-color: #FFFCDC;
+    border-radius: 5px;
+}
+
+.formulary-info input:hover::placeholder {
+    color: black;
+}
+
+.formulary-info select {
+    color: white;
+}
+
+.formulary-info select:hover {
+    transition: 0.5s;
+    color: black;
+    background-color: #FFFCDC;
+    border-radius: 5px;
+}
+
+.submit {
+    color: white;
+}
+
+.submit:hover {
+    transition: 0.5s;
+    color: black;
+    background-color: #FFFCDC;
+    border-radius: 5px;
+}
+
+/*End of Right-Content (lead capture page)*/
+
+
+/*Start of footer*/
+
+footer {
+    clear: left;
+    height: 50px;
+    width: 100%;
+    background-color: #2F2519;
+    position: relative;
+}
+
+footer p {
+    color: rgb(241, 235, 222);
+    font-family: 'Quintessential', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*End of footer*/
+
+
+/*Todas as Medias Queries*/
+
+@media screen and (max-width: 1773px) {
+    .p1 {
+        font-size: 19px;
+    }
+    .p2 {
+        font-size: 19px;
+    }
+    .formulary-info p{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1625px) {
+    .p1 {
+        font-size: 17px;
+    }
+    .p2 {
+        font-size: 17px;
+    }
+    .formulary-info p{
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 1485px) {
+    .formulary-info {
+        max-width: 30%;
+    }
+    .formulary-info p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1321px) {
+    .p1 {
+        font-size: 16px;
+    }
+    .p2 {
+        font-size: 16px;
+    }
+    .formulary-info input, select {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1182px) {
+    .square1 {
+        max-width: 35%;    
+    }
+    .square2 {
+        max-width: 35%;
+        top: 35%;
+    }
+    .p1 {
+        font-size: 15px;
+    }
+    .p2 {
+        font-size: 15px;
+    }
+    .formulary-info {
+        max-width: 35%;
+    }
+    .formulary-info p{
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .p1 {
+        font-size: 14px;
+    }
+    .p2 {
+        font-size: 14px;
+    }
+    .formulary-info p{
+        font-size: 17px;
+    }
+    .formulary-info input, select {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .welcome-to {
+        font-size: 50px;
+    }
+    .anne-house{
+        font-size: 50px;
+    }
+    .about {
+        width: 100%;
+    }
+    .lead-capture {
+        width: 100%;
+        display: block;
+        clear: left;
+    }
+    .square1 {
+        max-width: 32%;    
+    }
+    .square2 {
+        max-width: 32%;
+        top: 40%;
+    }
+    .p1 {
+        font-size: 17px;
+    }
+    .p2 {
+        font-size: 17px;
+    }
+    .formulary-info {
+        max-width: 25%;
+    }
+    .formulary-info p{
+        font-size: 22px;
+    }
+    .formulary-info input, select {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .welcome-to {
+        font-size: 40px;
+    }
+    .anne-house{
+        font-size: 40px;
+    }
+    .opening-hours {
+        font-size: 15px;
+    }
+    .p1 {
+        font-size: 15px;
+    }
+    .p2 {
+        font-size: 15px;
+    }
+    .formulary-info {
+        max-width: 30%;
+    }
+    .formulary-info p{
+        font-size: 20px;
+    }
+    .formulary-info input, select {
+        font-size: 12px;
+    }
+    footer p {
+        font-size: 13.5px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .welcome-to {
+        font-size: 38px;
+    }
+    .anne-house{
+        font-size: 38px;
+    }
+    .opening-hours {
+        font-size: 14px;
+    }
+    .p1 {
+        font-size: 14px;
+    }
+    .p2 {
+        font-size: 14px;
+    }
+    .formulary-info {
+        max-width: 32%;
+    }
+    .formulary-info p{
+        font-size: 18px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 551px) {
+    .text-landing {
+        left: 8%;
+    }
+    .welcome-to {
+        font-size: 33px;
+    }
+    .anne-house{
+        font-size: 33px;
+    }
+    .opening-hours {
+        font-size: 13px;
+    }
+    .square1 {
+        max-width: 45%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .square2 {
+        max-width: 45%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .p1 {
+        font-size: 15px;
+    }
+    .p2 {
+        font-size: 15px;
+    }
+    .formulary-info {
+        max-width: 35%;
+    }
+    .formulary-info p{
+        font-size: 18px;
+    }
+    footer p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .text-landing {
+        left: 7%;
+    }
+    .welcome-to {
+        font-size: 30px;
+    }
+    .anne-house{
+        font-size: 30px;
+    }
+    .opening-hours {
+        font-size: 12px;
+    }
+    .p1 {
+        font-size: 14px;
+    }
+    .p2 {
+        font-size: 14px;
+    }
+    .formulary-info {
+        max-width: 40%;
+    }
+    .formulary-info p{
+        font-size: 17px;
+    }
+    .formulary-info input, select {
+        font-size: 11px;
+    }
+    footer p {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    .welcome-to {
+        font-size: 25px;
+    }
+    .anne-house{
+        font-size: 25px;
+    }
+    .opening-hours {
+        font-size: 11px;
+    }
+    .p1 {
+        font-size: 13px;
+    }
+    .p2 {
+        font-size: 13px;
+    }
+    .formulary-info {
+        max-width: 45%;
+    }
+    .formulary-info p{
+        font-size: 16px;
+    }
+    .formulary-info input, select {
+        font-size: 10px;
+    }
+    footer p {
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .welcome-to {
+        font-size: 22px;
+    }
+    .anne-house{
+        font-size: 22px;
+    }
+    .square1 {
+        max-width: 50%;
+    }
+    .square2 {
+        max-width: 50%;
+    }
+    .p1 {
+        font-size: 12px;
+    }
+    .p2 {
+        font-size: 12px;
+    }
+    .formulary-info {
+        max-width: 50%;
+    }
+    .formulary-info p{
+        font-size: 15px;
+    }
+    footer p {
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .welcome-to {
+        font-size: 20px;
+    }
+    .anne-house{
+        font-size: 20px;
+    }
+    .p1 {
+        font-size: 11px;
+    }
+    .p2 {
+        font-size: 11px;
+    }
+    .formulary-info p{
+        font-size: 14px;
+    }
+    footer p {
+        font-size: 5px;
+    }
+}
+
+
+
